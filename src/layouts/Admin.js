@@ -10,13 +10,13 @@ import Navbar from "components/Navbars/Navbar.js";
 import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
-import {getToken} from "../utils/Common.js";
+import { getToken } from "../utils/Common.js";
 import routes from "routes.js";
 
 import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
 
 import bgImage from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/dawami_logo.png";
+import logo from "assets/img/logo_icon.png";
 
 let ps;
 
@@ -50,10 +50,10 @@ export default function Admin({ ...rest }) {
   const [color, setColor] = React.useState("blue");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const handleImageClick = image => {
+  const handleImageClick = (image) => {
     setImage(image);
   };
-  const handleColorClick = color => {
+  const handleColorClick = (color) => {
     setColor(color);
   };
   const handleFixedClick = () => {
@@ -79,7 +79,7 @@ export default function Admin({ ...rest }) {
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(mainPanel.current, {
         suppressScrollX: true,
-        suppressScrollY: false
+        suppressScrollY: false,
       });
       document.body.style.overflow = "hidden";
     }
@@ -93,10 +93,10 @@ export default function Admin({ ...rest }) {
     };
   }, [mainPanel]);
   const handleNonLoggedInUser = () => {
-    if(!getToken()) {
+    if (!getToken()) {
       return <Redirect to="/login" />;
     }
-  }
+  };
 
   return (
     <div className={classes.wrapper}>

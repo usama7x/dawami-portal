@@ -82,12 +82,13 @@ export default function Sidebar(props) {
   );
   var brand = (
     <div className={classes.logo}>
-      <div>
+      <div className={classes.logoContainer}>
           <img src={logo} alt="logo" className={classes.logoNew} />
+          <span className={classes.companyName}>{Lang.appName}</span>
       </div>
-      <div className={classes.companyName}>
+      {/* <div className={classes.companyName}>
       {Lang.appName}
-      </div>
+      </div> */}
     </div>
   );
   return (

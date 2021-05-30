@@ -1,5 +1,5 @@
 {
-    "login": "http://emp-attendance-api.azurewebsites.net/api/User/login",
+    "login": "https://localhost:44348/api/User/login",
     "dashboard": "/api/Attendance/dashboard-list",
     "companyProfile": "http://emp-attendance-api.azurewebsites.net/api/Organization/org-profile",
     "companyProfileUpdate": "http://emp-attendance-api.azurewebsites.net/api/Organization/update-org",
@@ -7,7 +7,7 @@
     "getLanguage": "/api/Language",
     "getTimezone": "/api/Timezone",
     "getEmployeeReport": "/api/EmployeesReport",
-    "getUsers":"http://emp-attendance-api.azurewebsites.net/api/User/org-users",
-    "addUser": "http://emp-attendance-api.azurewebsites.net/api/User/add-employee-user",
+    "getUsers":"https://localhost:44348/api/User/org-users",
+    "addUser": "https://localhost:44348/api/User/add-employee-user",
     "getUser": "http://emp-attendance-api.azurewebsites.net/api/User/profile"
 }

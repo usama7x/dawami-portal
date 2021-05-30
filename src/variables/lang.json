@@ -63,7 +63,7 @@
     "deleteShift": "Delete Shift",
     "shiftNameError": "Shift name must be 3 to 100 character long",
     "shiftNotSet": "Cannot save empty shift details",
-    "appName": "Employee Attendance App",
+    "appName": "Dawami",
     "maxRangeError": "Maximum Range must be below 999",
     "companynameLengthError": "Company Name must be 3 to 100 character long",
     "nameError":"Name must be 3 to 100 character long",
